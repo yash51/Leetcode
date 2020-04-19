@@ -7,7 +7,7 @@ public class BinarySearch {
 		
 		int arr[] ={1,2,3,4,5,6,7,8};
 		
-		int target=4;
+		int target=8;
 		
 		int start =0;
 		int end =arr.length - 1;
