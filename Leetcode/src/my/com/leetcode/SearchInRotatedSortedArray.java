@@ -3,6 +3,9 @@ package my.com.leetcode;
 public class SearchInRotatedSortedArray {
 	
 	public static int search(int[] nums, int target) {
+		
+		if(nums==null || nums.length ==0)
+            return -1;
 
 		int left = 0;
 		int right = nums.length - 1;
@@ -12,7 +15,7 @@ public class SearchInRotatedSortedArray {
 			if (nums[midpoint] > nums[right])
 				left = midpoint + 1;
 			else
-				right = midpoint - 1;
+				right = midpoint;
 		}
 
 		int start = left;
